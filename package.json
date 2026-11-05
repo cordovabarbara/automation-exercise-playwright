@@ -1,0 +1,22 @@
+{
+  "name": "sdet",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "test": "playwright test",
+  "test:chrome": "playwright test --project=chromium",
+  "test:headed": "playwright test --project=chromium --headed",
+  "test:ui": "playwright test --ui",
+  "test:debug": "playwright test --debug",
+  "report": "playwright show-report"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.6"
+  }
+}
