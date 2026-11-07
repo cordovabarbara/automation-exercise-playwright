@@ -1,5 +1,5 @@
 {
-  "name": "sdet",
+  "name": "playwright-typescript-e2e-framework",
   "version": "1.0.0",
   "main": "index.js",
 "scripts": {
