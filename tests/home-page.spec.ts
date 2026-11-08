@@ -1,17 +1,24 @@
 import { test, expect } from '@playwright/test';
+
+  test.describe( 'Home page' , () => {
+
+    test.beforeEach (async ({ page }) => {
+      await page.goto ('/');
+});
+
 test('Verify that the home page is displayed', async ({ page }) => {
 
-  // Navigate to the application
-  await page.goto('/');
-
-  // Verify page title
+  //Verify page title
   await expect(page).toHaveTitle(/Automation Exercise/);
 
-  // Verify home page is visible
+  // Verify applicayion URL
   await expect(page).toHaveURL(/automationexercise\.com/);
 
+  // Verify link is visible
   await expect(
-    page.getByRole('link', { name: 'Home'})
+    page.getByRole('link', { name: 'Home', exact: true})
   ).toBeVisible (); 
 
 });
+
+  });
